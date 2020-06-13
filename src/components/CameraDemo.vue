@@ -2,7 +2,7 @@
  * @Author: 彭俊
  * @Date: 2020-06-12 16:43:50
  * @LastEditors: 彭俊
- * @LastEditTime: 2020-06-13 13:27:25
+ * @LastEditTime: 2020-06-13 14:45:52
  * @FilePath: /SP_WEB_iview/Users/pengjun/vscode-workspace/vue/learn-vue-app/src/components/CameraDemo.vue
  * @Description: 调用安卓的拍照、录像、录音、相册、文件管理器，返回文件对象和文件路径
 --> 
@@ -20,11 +20,14 @@
       点击下面的按钮，获取文件对象：
     </p>
     <p>
+      上传文件：<input type="file" name="uploadFile" />
+    </p>
+    <!-- <p>
       选择照片上传：<input type="file" capture="camera" accept="image/*" name="image" />
-    </p>
-    <p>
+    </p> -->
+    <!-- <p>
       选择视频上传：<input type="file" capture="camera" accept="video/*" name="video" />
-    </p>
+    </p> -->
     <p>
       点击下面的按钮，获取的文件路径：
     </p>
