@@ -2,7 +2,7 @@
  * @Author: 彭俊
  * @Date: 2020-06-12 16:43:50
  * @LastEditors: 彭俊
- * @LastEditTime: 2020-06-13 14:45:52
+ * @LastEditTime: 2020-06-13 15:09:24
  * @FilePath: /SP_WEB_iview/Users/pengjun/vscode-workspace/vue/learn-vue-app/src/components/CameraDemo.vue
  * @Description: 调用安卓的拍照、录像、录音、相册、文件管理器，返回文件对象和文件路径
 --> 
@@ -17,7 +17,7 @@
     </mt-header>
     <br />
     <p>
-      点击下面的按钮，获取文件对象：
+      点击下面的按钮，获取文件对象（安卓 4.4.0-4.4.2 版本不支持，只能用下面的方法替换）：
     </p>
     <p>
       上传文件：<input type="file" name="uploadFile" />
