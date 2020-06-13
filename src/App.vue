@@ -2,19 +2,40 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-    <Demo />
+    <!-- <Worktable /> -->
+    <transition name="slide-fade">
+      <router-view v-if="isRouterAlive"></router-view>
+    </transition>
   </div>
 </template>
 
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
-import Demo from './components/Demo.vue';
+// import Worktable from './components/Index.vue';
 
 export default {
   name: 'App',
-  components: {
-    // HelloWorld
-    Demo
+  // components: {
+  //   // HelloWorld
+  //   Worktable
+  // }
+  provide() {
+    return {
+      reload: this.reload
+    };
+  },
+  data() {
+    return {
+      isRouterAlive: true
+    };
+  },
+  methods: {
+    reload() {
+      this.isRouterAlive = false;
+      this.$nextTick(function() {
+        this.isRouterAlive = true;
+      });
+    }
   }
 };
 </script>
