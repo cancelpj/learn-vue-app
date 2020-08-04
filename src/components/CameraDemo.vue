@@ -2,7 +2,7 @@
  * @Author: 彭俊
  * @Date: 2020-06-12 16:43:50
  * @LastEditors: 彭俊
- * @LastEditTime: 2020-07-01 16:30:27
+ * @LastEditTime: 2020-07-27 13:38:47
  * @FilePath: /SP_WEB_iview/Users/pengjun/vscode-workspace/vue/learn-vue-app/src/components/CameraDemo.vue
  * @Description: 调用安卓的拍照、录像、录音、相册、文件管理器，返回文件对象和文件路径
 --> 
@@ -77,7 +77,7 @@ export default {
   data() {
     return {
       barcode: '',
-      filePath: ''
+      filePath: '',
     };
   },
   mounted() {
@@ -104,10 +104,11 @@ export default {
       this.barcode = '';
     },
     // 处理 input 标签返回的文件对象
-    tirggerFile: function(event) {
+    tirggerFile: function (event) {
       let file = event.target.files; // (利用console.log输出看结构就知道如何处理档案资料)
+      console.log(file);
       // do something...
-    }
-  }
+    },
+  },
 };
 </script>
